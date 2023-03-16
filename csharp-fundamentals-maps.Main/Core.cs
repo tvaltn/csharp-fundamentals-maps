@@ -7,17 +7,18 @@ using System.Threading.Tasks;
 namespace csharp_fundamentals_maps.Main
 {
      public class Core
-    {
-        /*
-    The final fundamental building block of C# is a Dictionary. There is still much to learn about the language,
-    but this component will allow you to start building lots of more complex pieces of software.
+     {
     
-    Dictionary<K, V>
-    K is where you'd put the data type of the key for an item, V is the data type of the value.
-    If we wanted to map a persons details (their first name, last name, occupation etc.), we could use
-    a Dictionary using a String key and a String value like so:
-    Dictionary<string, string>
- */
+     /*
+          The final fundamental building block of C# is a Dictionary. There is still much to learn about the language,
+          but this component will allow you to start building lots of more complex pieces of software.
+    
+          Dictionary<K, V>
+          K is where you'd put the data type of the key for an item, V is the data type of the value.
+          If we wanted to map a persons details (their first name, last name, occupation etc.), we could use
+          a Dictionary using a String key and a String value like so:
+          Dictionary<string, string>
+     */
 
         //TODO: Spend some time understanding the method below
         /*
