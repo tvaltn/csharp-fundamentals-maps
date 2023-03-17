@@ -2,11 +2,11 @@
 
 ## Learning Objectives
 - Use Dictionary to store and access key value data pairs
-- Use generic typing to define types contained in a Dictionary
+- Use generic typing to define types contained in a Dictionary 
 
 ## Set up instructions
 - Fork this repository and clone the forked version to your machine
-- Open the root directory of the project in IntelliJ
+- Open the solution file.
 - Implement the requirements listed in comments in the `Core.cs` file
 - When ready to test your solution, open the 'Test Explorer' file and click "Run". 
 
