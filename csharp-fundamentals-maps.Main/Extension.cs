@@ -23,21 +23,21 @@ namespace csharp_fundamentals_maps.Main
             _planets.Add("Mars", 1.52f);
             _planets.Add("Venus", 0.72f);
             _planets.Add("Neptune", 30.06f);
-            //TODO 1.  Pluto is unfortunately no longer a planet so please comment out the add line!
         }
+        //TODO   Pluto is unfortunately no longer a planet so please comment out the add line!
 
         
         public Dictionary<string,int> LettersInName()
         {
-            throw new NotImplementedException();
+           
             Dictionary<string, int> result = new Dictionary<string, int>();
-            
-            //TODO 2.  Complete this method to return an Dictionary of <string,int> which contains 
+
+            //TODO   Complete this method to return an Dictionary of <string,int> which contains 
             //          the planet name and the number of letters in its name
             //          iterate the _planets using a foreach object to load the result dictionary.
 
-
             
+
             return result;
         }
 
@@ -45,27 +45,38 @@ namespace csharp_fundamentals_maps.Main
 
 
 
-        public Dictionary<string,float> Planets { get { return _planets; } }
 
         public Dictionary<string,float> OrderedPlanets()
         {           
                 return _planets.OrderBy(x => x.Value).ToDictionary(x => x.Key, x => x.Value);                           
         }
-
-        //       By examining the code in the OrderedPlanets method you can see how the original planet dictionary
-        //       has been ordered so the planets are in ascending order of AU (the float value in the pair).
-        //TODO:3 See if you can order the _planets dictionary DESCENDING and return the .First() element in a 
-        //       one line return, thus returning the last planet from the sun.
-        //       Note how you could copy line 52, add .Last() and paste into the method
-        //       to achieve this without changing the OrderBy!
-
-
-        public KeyValuePair<string,float> FurthestFromTheSun()
-        {
-            throw new NotImplementedException();
-            
-
+        public Dictionary<string, float> OrderedPlanetsByDescending()
+        {            
+            return _planets.OrderBy(x => x.Value).ToDictionary(x => x.Key, x => x.Value);
         }
+        //TODO:  modify the OrderedPlanetsByDescending so it is not dictionary is not doing an OrderBy but OrderByDescending
+
+
+
+        //      
+        //TODO   using the OrderedPlanets method get the
+        //       furthest from the sun.
+        //       Update the method to return the correct KeyValuePair's Key (the string)!
+        //       Use the ClosestToTheSun as a guide
+        
+
+        public string FurthestFromTheSun()
+        {
+            return string.Empty;      
+        }
+        public string ClosestToTheSun()
+        {
+            KeyValuePair<string, float> result = OrderedPlanets().First();
+
+            return result.Key;
+        }
+
+        public Dictionary<string,float> Planets { get { return _planets; } }
 
 
     }
